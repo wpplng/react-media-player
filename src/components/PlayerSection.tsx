@@ -1,6 +1,6 @@
 import type { ReactElement } from 'react';
 
 const PlayerSection = (): ReactElement => {
-  return <div>PlayerSection</div>;
+  return <section>PlayerSection</section>;
 };
 export default PlayerSection;
