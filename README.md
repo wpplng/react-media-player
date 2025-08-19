@@ -1,69 +1,44 @@
-# React + TypeScript + Vite
+# React Media Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this exercise you will create a media player using React and TypeScript.
 
-Currently, two official plugins are available:
+## Instructions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The point of this exercise is to create this media player with as many valid components as possible, just to get comfortable working with a React mindset. Look at the images that are available in the assets folder and derive from there what components you will need.
 
-## Expanding the ESLint configuration
+Use flexbox or grid for layout and material icons for icons. Colors, fonts and backgrounds are something that you are free to choose on your own. It doesn't even have to display music, it could be movies as well. The images are just suggestions. Use them as a base for your UI.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Remember**, this is not a application to play actual media files. It's just a presentation application that displays images and icons and so on.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Requirements
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- Usage of TypeScript is mandatory.
+- At least eight different pieces of media content must be visible.
+- Make the application responsive.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Google fonts & Material Icons
+
+This is the link to Google fonts: [Google Fonts](https://fonts.google.com/).
+
+This is the link to Material icons: [Material Icons](https://fonts.google.com/icons)
+
+Material Icons are applied to your application by adding this link to your `<head>` element:
+
+```html
+<link
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+  rel="stylesheet"
+/>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then it's used like this inside your components:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```html
+<span className="material-symbols-outlined"> play_arrow </span>
 ```
+
+The "play-arrow" can of course be change to any other text belonging to an icon.
+
+### Screenshot
+
+<figure><img src='./assets/desktop-mode.png'></figure>
