@@ -1,11 +1,17 @@
+import React from 'react';
 import type { ReactElement } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faAngleLeft,
+  faEllipsisVertical,
+} from '@fortawesome/free-solid-svg-icons';
 
 const Header = (): ReactElement => {
   return (
     <header>
-      <span className='material-symbols-outlined'>arrow_back_ios</span>
+      <FontAwesomeIcon icon={faAngleLeft} />
       <h1>Playlist - Taylor Swift</h1>
-      <span className='material-symbols-outlined'>more_vert</span>
+      <FontAwesomeIcon icon={faEllipsisVertical} />
     </header>
   );
 };
