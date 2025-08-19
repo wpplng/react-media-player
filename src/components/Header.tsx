@@ -4,7 +4,7 @@ const Header = (): ReactElement => {
   return (
     <header>
       <span className='material-symbols-outlined'>arrow_back_ios</span>
-      <h1>Playlist - Moody</h1>
+      <h1>Playlist - Taylor Swift</h1>
       <span className='material-symbols-outlined'>more_vert</span>
     </header>
   );
