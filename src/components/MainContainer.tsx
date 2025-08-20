@@ -2,7 +2,7 @@ import type { ReactElement } from 'react';
 import ListSection from './ListSection';
 import PlayerSection from './PlayerSection';
 
-const Main = (): ReactElement => {
+const MainContainer = (): ReactElement => {
   return (
     <main>
       <ListSection />
@@ -10,4 +10,4 @@ const Main = (): ReactElement => {
     </main>
   );
 };
-export default Main;
+export default MainContainer;
