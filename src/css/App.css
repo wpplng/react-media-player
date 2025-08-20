@@ -12,20 +12,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-header {
-  background-color: #2d313d;
-  height: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-
-  .svg-inline--fa {
-    font-size: 1.8rem;
-  }
-}
-
 main {
   display: flex;
   gap: 0.8rem;
@@ -48,73 +34,4 @@ section {
   .fa-circle-play {
     font-size: 4rem;
   }
-}
-
-.play-icons-outer,
-.title-box,
-.time-line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.play-icons-outer {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.play-icons-inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.player-section-image {
-  height: 30rem;
-  width: 30rem;
-}
-
-.progress-bar {
-  background: #2d313d;
-  border-radius: 13px;
-  height: 0.8rem;
-  width: 85%;
-}
-
-.progress-bar:after {
-  content: '';
-  display: block;
-  background: #f9faf5;
-  width: 20%;
-  height: 100%;
-  border-radius: 9px;
-}
-
-/* ListSection */
-.list-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 2rem;
-  padding-right: 2rem;
-
-  .fa-circle-play {
-    font-size: 2rem;
-  }
-}
-
-.song-info-box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-}
-
-.list-section-image {
-  height: 5rem;
-  width: 5rem;
 }

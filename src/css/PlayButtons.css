@@ -1,0 +1,10 @@
+.play-icons-outer {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.play-icons-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+.list-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  .fa-circle-play {
+    font-size: 2rem;
+  }
+}
+
+.song-info-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list-section-image {
+  height: 5rem;
+  width: 5rem;
+}

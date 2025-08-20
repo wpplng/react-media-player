@@ -1,0 +1,11 @@
+.play-icons-outer,
+.title-box,
+.time-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

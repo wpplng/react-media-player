@@ -1,0 +1,13 @@
+header {
+  background-color: #2d313d;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .svg-inline--fa {
+    font-size: 1.8rem;
+  }
+}
