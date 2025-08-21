@@ -5,6 +5,14 @@
 }
 
 .player-section-image {
-  max-height: 30rem;
-  max-width: 30rem;
+  height: 23rem;
+  width: 23rem;
+}
+
+/* media query */
+@media screen and (max-width: 480px) {
+  .player-section-image {
+    height: auto;
+    width: 100%;
+  }
 }

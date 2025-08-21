@@ -1,4 +1,11 @@
 main {
   display: flex;
-  gap: 0.7rem;
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

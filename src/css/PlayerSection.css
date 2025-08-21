@@ -1,14 +1,16 @@
 .player-section {
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 2rem;
+  padding-top: 3rem;
+  border-left: 0.3rem solid var(--blue-light);
 
   .fa-circle-play {
     font-size: var(--icon-size-lg);
   }
 }
 
-/* Child components of player section */
+/* child components of player section */
 .play-buttons,
 .song-info,
 .progress-bar {
@@ -19,4 +21,12 @@
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+  .player-section {
+    border-left: none;
+    border-bottom: 0.3rem solid var(--blue-light);
+  }
 }

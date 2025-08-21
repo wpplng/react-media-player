@@ -1,4 +1,12 @@
 .list-section {
-  justify-content: space-between;
   padding: 2rem;
+  gap: 2rem;
+  border-right: 0.3rem solid var(--blue-light);
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+  .list-section {
+    border-right: none;
+  }
 }

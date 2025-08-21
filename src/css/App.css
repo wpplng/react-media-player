@@ -20,8 +20,8 @@
 }
 
 body {
-  background-color: var(--blue-light);
   color: var(--white);
+  background-color: var(--blue);
   font-family: 'Lato', sans-serif;
 }
 
@@ -42,12 +42,19 @@ h3 {
 
 section {
   background-color: var(--blue);
-  height: 100vh;
-  width: 50%;
+  min-height: 100vh;
+  width: 50vw;
   display: flex;
   flex-direction: column;
 }
 
 .svg-inline--fa {
   font-size: var(--icon-size-sm);
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+  section {
+    width: 100vw;
+  }
 }
