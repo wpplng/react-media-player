@@ -1,9 +1,9 @@
-.play-icons-outer {
+.play-buttons {
   padding-left: 4rem;
   padding-right: 4rem;
 }
 
-.play-icons-inner {
+.play-buttons-inner {
   display: flex;
   justify-content: center;
   align-items: center;
