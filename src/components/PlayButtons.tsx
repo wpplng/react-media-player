@@ -10,17 +10,13 @@ import {
 const PlayButtons = () => {
   return (
     <div className='play-buttons'>
-      <div>
-        <FontAwesomeIcon icon={faRepeat} />
-      </div>
+      <FontAwesomeIcon icon={faRepeat} />
       <div className='play-buttons-inner'>
         <FontAwesomeIcon icon={faBackward} />
         <FontAwesomeIcon icon={faCirclePlay} />
         <FontAwesomeIcon icon={faForward} />
       </div>
-      <div>
-        <FontAwesomeIcon icon={faShuffle} />
-      </div>
+      <FontAwesomeIcon icon={faShuffle} />
     </div>
   );
 };

@@ -1,11 +1,12 @@
 import Header from './components/Header';
 import MainContainer from './components/MainContainer';
+import { songs } from './utilities/data';
 
 function App() {
   return (
     <>
       <Header />
-      <MainContainer />
+      <MainContainer songs={songs} />
     </>
   );
 }

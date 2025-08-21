@@ -1,10 +1,9 @@
-const Image = () => {
-  return (
-    <img
-      src='../src/assets/images/reputation.jpg'
-      className='player-section-image'
-    />
-  );
+interface ImageProps {
+  coverUrl: string;
+}
+
+const Image = ({ coverUrl }: ImageProps) => {
+  return <img src={coverUrl} className='player-section-image' />;
 };
 
 export default Image;

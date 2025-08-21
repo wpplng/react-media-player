@@ -1,17 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
+import type { Song } from '../utilities/types';
 
-const SongListItem = () => {
+interface SongListItemProps {
+  song: Song;
+}
+
+const SongListItem = ({ song }: SongListItemProps) => {
   return (
     <>
       <div className='song-info-box'>
-        <img
-          src='../src/assets/images/reputation.jpg'
-          className='list-section-image'
-        />
+        <img src={song.coverUrl} className='list-section-image' />
         <div>
-          <h2>Taylor Swift</h2>
-          <h3>Reputation</h3>
+          <h2>{song.artist}</h2>
+          <h3>{song.title}</h3>
         </div>
       </div>
       <FontAwesomeIcon icon={faCirclePlay} />
