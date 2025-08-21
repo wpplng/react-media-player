@@ -1,0 +1,60 @@
+import type { Song } from './types';
+
+export const songs: Song[] = [
+  {
+    id: '1',
+    artist: 'Taylor Swift',
+    title: 'End Game',
+    album: 'reputation',
+    coverUrl: '/src/assets/images/reputation.jpg',
+    duration: '3:42',
+  },
+  {
+    id: '2',
+    artist: 'Taylor Swift',
+    title: 'august',
+    album: 'folklore',
+    coverUrl: '/src/assets/images/folklore.jpg',
+    duration: '4:10',
+  },
+  {
+    id: '3',
+    artist: 'Taylor Swift',
+    title: 'evermore',
+    album: 'tolerate it',
+    coverUrl: '/src/assets/images/evermore.jpg',
+    duration: '4:05',
+  },
+  {
+    id: '4',
+    artist: 'Taylor Swift',
+    title: 'Cruel Summer',
+    album: 'Lover',
+    coverUrl: '/src/assets/images/lover.jpg',
+    duration: '4:08',
+  },
+  {
+    id: '5',
+    artist: 'Taylor Swift',
+    title: 'Red',
+    album: 'Red',
+    coverUrl: '/src/assets/images/red.jpg',
+    duration: '3:43',
+  },
+  {
+    id: '6',
+    artist: 'Taylor Swift',
+    title: 'loml',
+    album: 'The Tortured Poets Department',
+    coverUrl: '/src/assets/images/ttpd.jpg',
+    duration: '4:03',
+  },
+  {
+    id: '7',
+    artist: 'Taylor Swift',
+    title: 'Style',
+    album: '1989',
+    coverUrl: '/src/assets/images/1989.jpg',
+    duration: '3:58',
+  },
+];
