@@ -9,11 +9,11 @@ import {
 
 const PlayButtons = () => {
   return (
-    <div className='play-icons-outer'>
+    <div className='play-buttons'>
       <div>
         <FontAwesomeIcon icon={faRepeat} />
       </div>
-      <div className='play-icons-inner'>
+      <div className='play-buttons-inner'>
         <FontAwesomeIcon icon={faBackward} />
         <FontAwesomeIcon icon={faCirclePlay} />
         <FontAwesomeIcon icon={faForward} />
