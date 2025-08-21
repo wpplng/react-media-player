@@ -1,5 +1,6 @@
 import type { ReactElement } from 'react';
 import Image from './Image';
+import SongBox from './SongBox';
 import type { Song } from '../utilities/types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
@@ -13,10 +14,7 @@ const SongListItem = ({ song }: SongListItemProps): ReactElement => {
     <article className='song-list-item'>
       <div className='song-list-item-info'>
         <Image coverUrl={song.coverUrl} className='song-list-item-image' />
-        <div>
-          <h2>{song.artist}</h2>
-          <h3>{song.title}</h3>
-        </div>
+        <SongBox artist={song.artist} title={song.title} />
       </div>
       <FontAwesomeIcon icon={faCirclePlay} />
     </article>

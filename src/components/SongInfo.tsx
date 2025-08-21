@@ -1,6 +1,7 @@
 import type { ReactElement } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlus, faHeart } from '@fortawesome/free-solid-svg-icons';
+import SongBox from './SongBox';
 
 interface SongInfoProps {
   artist: string;
@@ -11,10 +12,7 @@ const SongInfo = ({ artist, title }: SongInfoProps): ReactElement => {
   return (
     <div className='song-info'>
       <FontAwesomeIcon icon={faCirclePlus} />
-      <div>
-        <h2>{artist}</h2>
-        <h3>{title}</h3>
-      </div>
+      <SongBox artist={artist} title={title} />
       <FontAwesomeIcon icon={faHeart} />
     </div>
   );
