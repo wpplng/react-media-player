@@ -1,11 +1,11 @@
-.progress-bar {
+.progress-bar-line {
   background: var(--blue-dark);
   border-radius: 13px;
   height: 0.8rem;
   width: 85%;
 }
 
-.progress-bar:after {
+.progress-bar-line:after {
   content: '';
   display: block;
   background: var(--white);

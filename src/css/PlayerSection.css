@@ -8,9 +8,10 @@
   }
 }
 
+/* Child components of player section */
 .play-buttons,
-.title-box,
-.time-line {
+.song-info,
+.progress-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;

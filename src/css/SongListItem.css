@@ -11,9 +11,3 @@
   align-items: center;
   gap: 1rem;
 }
-
-.song-list-item-image {
-  height: 5rem;
-  width: 5rem;
-  border: 1px solid var(--blue-light);
-}

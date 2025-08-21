@@ -1,3 +1,4 @@
+import type { ReactElement } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBackward,
@@ -7,7 +8,7 @@ import {
   faShuffle,
 } from '@fortawesome/free-solid-svg-icons';
 
-const PlayButtons = () => {
+const PlayButtons = (): ReactElement => {
   return (
     <div className='play-buttons'>
       <FontAwesomeIcon icon={faRepeat} />

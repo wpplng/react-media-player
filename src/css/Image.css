@@ -1,0 +1,10 @@
+.song-list-item-image {
+  height: 5rem;
+  width: 5rem;
+  border: 1px solid var(--blue-light);
+}
+
+.player-section-image {
+  max-height: 30rem;
+  max-width: 30rem;
+}
