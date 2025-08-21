@@ -1,3 +1,17 @@
+.player-section {
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  .svg-inline--fa {
+    font-size: 1.8rem;
+  }
+
+  .fa-circle-play {
+    font-size: 4rem;
+  }
+}
+
 .play-buttons,
 .title-box,
 .time-line {

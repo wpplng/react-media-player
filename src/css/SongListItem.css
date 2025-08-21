@@ -1,0 +1,17 @@
+.song-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song-list-item-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.song-list-item-image {
+  height: 5rem;
+  width: 5rem;
+}

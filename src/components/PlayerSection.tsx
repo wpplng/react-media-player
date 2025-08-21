@@ -11,7 +11,7 @@ interface PlayerSectionProps {
 
 const PlayerSection = ({ song }: PlayerSectionProps): ReactElement => {
   return (
-    <section>
+    <section className='player-section'>
       <Image coverUrl={song.coverUrl} />
       <SongInfo artist={song.artist} title={song.title} />
       <ProgressBar duration={song.duration} />

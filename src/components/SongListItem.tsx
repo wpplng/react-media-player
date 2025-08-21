@@ -8,16 +8,16 @@ interface SongListItemProps {
 
 const SongListItem = ({ song }: SongListItemProps) => {
   return (
-    <>
-      <div className='song-info-box'>
-        <img src={song.coverUrl} className='list-section-image' />
+    <article className='song-list-item'>
+      <div className='song-list-item-info'>
+        <img src={song.coverUrl} className='song-list-item-image' />
         <div>
           <h2>{song.artist}</h2>
           <h3>{song.title}</h3>
         </div>
       </div>
       <FontAwesomeIcon icon={faCirclePlay} />
-    </>
+    </article>
   );
 };
 
