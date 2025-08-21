@@ -1,5 +1,5 @@
 .progress-bar {
-  background: #2d313d;
+  background: var(--blue-dark);
   border-radius: 13px;
   height: 0.8rem;
   width: 85%;
@@ -8,7 +8,7 @@
 .progress-bar:after {
   content: '';
   display: block;
-  background: #f9faf5;
+  background: var(--white);
   width: 20%;
   height: 100%;
   border-radius: 9px;

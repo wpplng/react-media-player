@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--blue-dark);
 }
 
 .song-list-item-info {
@@ -14,4 +15,5 @@
 .song-list-item-image {
   height: 5rem;
   width: 5rem;
+  border: 1px solid var(--blue-light);
 }

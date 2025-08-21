@@ -9,7 +9,8 @@
 :root {
   --blue: #17283d;
   --blue-dark: #2d313d;
-  --background-color: #9ab5b8;
+  --blue-light: #9ab5b8;
+  --white: #f9faf5;
   --font-size-base: 1rem;
   --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
   --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
@@ -17,21 +18,24 @@
 }
 
 body {
-  background-color: var(--background-color);
-  color: #f9faf5;
+  background-color: var(--blue-light);
+  color: var(--white);
   font-family: 'Lato', sans-serif;
 }
 
 h1 {
   font-size: var(--font-size-lg);
+  font-weight: 500;
 }
 
 h2 {
   font-size: var(--font-size-md);
+  font-weight: 400;
 }
 
 h3 {
   font-size: var(--font-size-base);
+  font-weight: 400;
 }
 
 main {
