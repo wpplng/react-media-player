@@ -7,16 +7,23 @@ import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 
 interface SongListItemProps {
   song: Song;
+  onClick: () => void;
 }
 
-const SongListItem = ({ song }: SongListItemProps): ReactElement => {
+const SongListItem = ({ song, onClick }: SongListItemProps): ReactElement => {
   return (
     <article className='song-list-item'>
       <div className='song-list-item-info'>
         <Image coverUrl={song.coverUrl} className='song-list-item-image' />
         <SongBox artist={song.artist} title={song.title} />
       </div>
-      <FontAwesomeIcon icon={faCirclePlay} />
+      <button
+        className='play-button'
+        onClick={onClick}
+        aria-label={`Play ${song.title}`}
+      >
+        <FontAwesomeIcon icon={faCirclePlay} />
+      </button>
     </article>
   );
 };

@@ -6,10 +6,14 @@ import PlayButtons from './PlayButtons';
 import type { Song } from '../utilities/types';
 
 interface PlayerSectionProps {
-  song: Song;
+  song: Song | null;
 }
 
 const PlayerSection = ({ song }: PlayerSectionProps): ReactElement => {
+  if (!song) {
+    return <section className='player-section'></section>;
+  }
+
   return (
     <section className='player-section'>
       <Image coverUrl={song.coverUrl} className='player-section-image' />

@@ -4,13 +4,18 @@ import type { Song } from '../utilities/types';
 
 interface ListSectionProps {
   songs: Song[];
+  onSelect: (song: Song) => void;
 }
 
-const ListSection = ({ songs }: ListSectionProps): ReactElement => {
+const ListSection = ({ songs, onSelect }: ListSectionProps): ReactElement => {
   return (
     <section className='list-section'>
       {songs.map((song) => (
-        <SongListItem key={song.id} song={song} />
+        <SongListItem
+          key={song.id}
+          song={song}
+          onClick={() => onSelect(song)}
+        />
       ))}
     </section>
   );

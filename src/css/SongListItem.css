@@ -11,3 +11,23 @@
   align-items: center;
   gap: 1rem;
 }
+
+.song-list-item button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.song-list-item button:hover {
+  color: var(--blue-light);
+}
+
+.song-list-item button:focus {
+  outline: none;
+}
